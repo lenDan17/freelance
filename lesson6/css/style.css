@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Roboto:wght@400;500;700&display=swap');
+
+
+body{
+
+    max-width: 812px;
+    font-family: "Lato";
+    margin: 0 auto;
+    color: #1E212C;
+}
+header h1{
+  
+   margin: 12px 0 90px 0; 
+    font-weight: 900;
+    font-size: 46px;
+    line-height: 130%;
+   
+}
+img{
+    border-radius: 4px;
+    max-width: 100%;
+}
+main{
+    margin: 60px 0 24px 0 ;
+}
+.section-one {
+}
+.vulputate-text {
+    font-weight: 700;
+font-size: 20px;
+line-height: 150%;
+margin-bottom: 26px;
+
+}
+.amet-text {
+    margin-bottom: 26px;
+    font-size: 16px;
+line-height: 160%;
+color: #424551;
+
+}
+.section-two {
+    margin-top: 46px;
+}
+.lorem {
+    font-weight: 700;
+font-size: 20px;
+line-height: 150%;
+padding-left: 58px;
+margin-bottom: 48px;
+}
+.lorem-two{
+    margin-bottom: 24px;
+}
+.list{
+    margin-bottom: 4px;
+    padding-left: 16px;
+}
+.finish {
+    margin-top: 24px;
+}
+
+/*+++++++++  практика уроку 6++++++++++++++++++++++*/
+.practik-border{
+    font-size: 25px;
+    background-color: blue;
+    border: 10px solid hsl(216, 15%, 42%);
+    padding: 20px;
+    margin-bottom: 30px;  
+}
+.practik-borderone{
+    font-size: 20px;
+    line-height: 120%;
+    border-top: 3px dashed #b3d77e;
+    border-left: 7px dotted #214a21;
+    border-right: 5px solid grey;
+    border-bottom: 2px solid rgb(59, 29, 29);
+    padding: 25px;
+    margin-bottom: 40px;
+    box-shadow: 15px 10px 15px #27212159;
+    color: #214a21;
+}
+.link{
+    outline: 3px solid hsla(84, 81%, 63%, 0.693);
+    margin: 40px;
+    padding: 15px;
+    border-radius: 25px 10px ;
+    background-color: #b3d77e;
+    box-shadow: 2px 20px 5px #04160488;
+    display: inline-block;
+}
+.practic-opacity{
+    opacity: 0.5;
+    margin-top: 50px;
+    margin-bottom: 40px;
+padding: 20px;
+font-size: 22px;
+border-radius: 10%;
+box-shadow: 15px 45px 2px inset #717d718d;
+}
+.flower{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+
+}
+.practik-visibility{
+    margin: 50px;
+    visibility: hidden;
+}
+.practik-overflow{
+    background-color: rgb(166, 126, 72);
+    padding: 20px;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 130%;
+    max-height: 100px;
+    overflow: auto;
+    border-radius: 12px;
+    margin-bottom: 40px;
+}
