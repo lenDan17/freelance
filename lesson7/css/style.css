@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+
+[class*="__container"]{
+    max-width:812px ;
+    margin: 0 auto;
+    font-family: "lato";
+    color: #424551; ;
+}
+.top__container{
+    margin-bottom: 60px;
+}
+h1{
+    font-weight: 900;
+font-size: 46px;
+line-height: 130%;
+color: #1E212C;
+margin-bottom: 34px;
+}
+.image{
+    max-width: 100%;
+    border-radius: 4px;
+}
+.text-info {
+    margin-bottom: 48px;
+}
+.text-vulputate {
+    font-weight: 700;
+font-size: 20px;
+line-height: 150%;
+color: #1E212C;
+margin-bottom: 26px;
+}
+.text-amet {
+   
+margin-bottom: 26px;
+}
+.text-amets{
+margin-bottom: 42px;
+}
+.texts {
+    line-height: 160%;
+    
+}
+.text-lorem {
+padding-left: 58px;    
+font-weight: 700;
+font-size: 20px;
+line-height: 150%;
+color: #1E212C;
+background: url(../img/icons/braces.png) 3px 0 no-repeat;
+}
+
+.text-list {
+    margin-bottom: 24px;
+}
+.text-list li:not(:last-child) {
+    margin-bottom: 0;
+}
+.marius {
+    margin-bottom: 24px;
+}
+.text-list li{
+ margin-bottom: 4px;
+ padding-left: 32px;
+background: url(../img/icons/check.svg) 0px 6px no-repeat;
+}
+.list{
+    margin-bottom: 24px;
+}
+/*=======background==========*/
+
+.background
+
+{
+    background-color: aquamarine;
+    
+}
+
+
+.socks__container{
+    font-size: 25px;
+    line-height: 170%;
+   background: url(../img/gettysocks.jpg) no-repeat;
+overflow: hidden;
+  border-radius: 20px 90px;
+  text-decoration: underline;
+  margin-bottom: 40px;
+}
+.gradient__container{
+    background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,121,53,1) 35%, rgba(0,212,255,1) 100%);
+min-height: 150px;
+border-radius: 100px 40px 100px 70px;
+margin-bottom: 50px;
+}
+.fire{
+  max-width: 100%;
+    border-radius: 50%;
+    height: 400px;
+    width: 400px;
+   margin: 150px 0 0 250px;
+}
+.repeat__container{
+    background: url(../img/coffee.jpg) repeat-x;
+    min-height: 400px;
+    margin-bottom: 30px;
+    box-shadow: 30px 10px 30px 10px rgb(72, 67, 61);
+    border-radius: 20px 0 0 0;
+}
+.position__container{
+    min-height: 500px;
+    margin-bottom: 50px;
+    padding: 15px;
+    
+    background: rgba(181, 155, 91, 0.355) url(../img/love.jpg) no-repeat center;
+}
