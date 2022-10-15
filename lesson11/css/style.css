@@ -1,0 +1,73 @@
+.wrapper {
+    position: relative;
+    overflow: hidden;
+    min-height: 100%;
+}
+.header {
+}
+.main {
+}
+.main__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: url(../img/road.jpg) 0 0/cover no-repeat;
+   
+}
+.page {
+    position: relative;
+padding: 40px;
+    min-height: 750px;
+}
+.page__police {
+    max-width: 200px;
+    position: absolute;
+    bottom: 0;
+    right: 400px;
+    z-index: 1;
+}
+.page__police:hover{
+    bottom: 80px;
+    right:600px;
+    transition: all 2s ease;   
+}
+.page__thief {
+    max-width: 300px;
+    position: absolute;
+    bottom: 0;
+    left: 200px;
+}
+.page__thief:hover{
+    bottom: 50px;
+    left: 0;
+    transition: all 1s ease;
+}
+.page__car {
+    max-width: 500px;
+    position: absolute;
+   bottom: 60px;
+    right: -20px;
+}
+.page__helicopter {
+    max-width: 600px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.page__helicopter:hover{
+    top: 350px;
+    right: 0;
+    transition: all 3s ease;
+}
+.page__card{
+    position: absolute;
+    max-width:200px ;
+    bottom: 250px;
+    left: 10px;
+}
+.page__card:hover{
+    bottom: 260px;
+    left: 190px;
+    transition: all 5s ease;
+}
+.footer {
+}
