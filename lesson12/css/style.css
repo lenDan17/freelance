@@ -1,0 +1,116 @@
+.wrapper {
+    overflow: hidden;
+    min-height: 100%;
+    position: relative;
+}
+.main__container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.page {
+    position: relative;
+    min-height: 800px;
+    background: url(../img/park.jpg) 0 0/cover no-repeat;
+    max-width: 1000px;
+}
+.page__boys {
+    position: absolute;
+    max-width: 150px;
+    top: 400px;
+    left: 50px;
+}
+.page__boy {
+    position: absolute;
+    max-width: 200px;
+    bottom: 0;
+    left: 0;
+}
+.page__tree {
+    position: absolute;
+    max-width: 300px;
+    bottom: 0;
+    right: 0;
+    
+}
+.page__skate {
+    position: absolute;
+    max-width: 200px;
+    bottom: 0;
+    left: 250px;
+    transform: rotate(50deg);
+}
+.page__ball {
+    position: absolute;
+    max-width: 50px;
+    top: 450px;
+    left: 220px;
+}
+.page__rain{
+    position: absolute;
+    top: 100px;
+    right: 80px;
+    max-width: 300px;
+    opacity: 0;
+    overflow: hidden;
+
+}
+.page:hover .page__rain{
+    opacity: 1;
+    overflow: visible;
+    transform: skew(-30deg,20deg);
+    transition: all 15s ease ;
+    top: 180px;
+}
+
+.page__cloud{
+    position: absolute;
+    max-width: 150px;
+    top: 0;
+    right: 50px;
+overflow: hidden;
+opacity: 0;
+}
+.page:hover .page__cloud{
+    overflow: visible;
+    opacity: 1;
+    transform: scale(2);
+    top: 150px;
+    right: 150px;
+    transition: all 10s ease ;
+}
+.page:hover .page__tree{
+   
+    transform:scale(1.5) ;
+   right: 150px;
+   transition: all 10s ease ;
+  bottom: 70px; 
+  z-index: 1; 
+}
+.page:hover .page__ball {
+    transform: rotate(360deg);
+    transition: all 3s ease ;
+   left:600px;
+   top: 500px;
+
+}
+.page:hover .page__boys{
+    transform: translate(300px);
+    transition: all 15s ease ;
+}
+.page:hover .page__skate{
+    transform: translate(-80px,20px);
+    transition: all 5s ease ;
+    bottom: 10px;
+}
+.page__dog{
+    position: absolute;
+    max-width: 150px;
+    bottom: 10px;
+    left: 500px;
+}
+.page:hover .page__dog{
+    transform: translate(-10px);
+    left: 150px;
+    transition: all 10s ease ;
+}
