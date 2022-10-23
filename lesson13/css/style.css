@@ -1,0 +1,236 @@
+.wrapper{
+    overflow: hidden;
+    min-height: 100%;
+    position: relative;
+}
+.main__cotainer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+   
+}
+.page {
+    position: relative;
+    min-height: 800px;
+    background: url(../img/sky.webp) 0 0 /cover no-repeat;
+}
+.page:hover{
+    background: url(../img/spacesky.webp)0 0/cover no-repeat;
+    transition: all 7s ease 4s;
+}
+.page__sun , .page__mars,.page__venera, .page__earth, .page__saturn,.page__uran, .page__merkuri,
+.page__neptun, .page__jupiter{
+    position: absolute;
+    width: 100px;
+   
+}
+.page__sun {
+  width: 400px;
+   top: 300px;
+   left: 0px;
+  animation-name: rotate;
+  animation-iteration-count: infinite;
+  animation-duration: 5s;
+  animation-direction: reverse;
+  animation-timing-function: linear;
+  z-index: 1;
+}
+.page__mars {
+    bottom: 0;
+    left: 500px;
+    width: 140px;
+    animation: planet-mars 5s linear 1 forwards;
+}
+.page__venera {
+    right: 300px;
+    bottom: 0;
+    animation: venera 5s linear 1 5s forwards;
+}
+@keyframes venera {
+0%{
+    transform: rotate(0);
+}
+15%{
+    transform: rotate(360deg); 
+}
+40%{
+    transform: rotate(360deg);
+}
+50%{
+    transform: scale(2);
+}
+70%{
+    transform: translate(-500px,-1000px);
+}
+
+    
+}
+.page__earth {
+    right: 0px;
+    bottom: 200px;
+    animation: planet-saturn 5s linear 1 forwards;
+}
+
+.page__saturn {
+    right: 0px;
+    top: 200px;
+    width: 130px;
+    animation: planet-saturn 5s linear 1 forwards;
+}
+.page__uran {
+    top: 0px;
+    left: 500px;
+    animation: planet-uran 5s linear 1 forwards;
+
+}
+.page__merkuri {
+    right: 300px;
+    top: 50px;
+    animation: merkuri 5s linear 1 5s forwards;;
+}
+@keyframes merkuri{
+    0%{
+        transform: rotate(0);
+    }
+    15%{
+        transform: rotate(360deg); 
+    }
+    40%{
+        transform: rotate(360deg);
+    }
+    50%{
+        transform: scale(2);
+    }
+    70%{
+        transform: translate(-500px,1000px);
+    }
+}
+.page__neptun {
+    left: 200px;
+    top: 70px;
+   animation: planet-neptun 5s linear 1 forwards;
+ 
+}
+.page__jupiter {
+    bottom: 0;
+    left: 200px;
+    width: 120px;
+    animation: planet-jupiter 5s linear 1 forwards;
+}
+@keyframes rotate{
+0%{
+transform: rotate(0);
+}100%{
+transform: rotate(360deg);
+}
+}
+@keyframes planet-neptun{
+ 0%{
+    transform: translatey(0)
+ }
+ 20%{
+    transform: translatey(150px)
+ }  
+ 50%{
+    transform: translatey(150px) 
+ }
+ 100%{
+    transform: translate(800px,1000px)
+ }
+}
+@keyframes planet-uran{
+    0%{
+       transform: translatey(0)
+    }  
+    20%{
+        transform: translate(-50px, 100px)
+    }
+    30%{
+        transform: rotate(0);
+    }
+    50%{
+        transform: rotate(360deg);
+    }
+    100%{
+       transform:scale(2);
+    }
+   }
+   @keyframes planet-saturn{
+    0%{
+       transform: translatey(0)
+    }  
+    100%{
+       transform: translate(-100px, 0px)
+    }
+   }
+   @keyframes planet-jupiter{
+    0%{
+       transform: translatey(0)
+    }  
+    20%{
+       transform: translate(0px, -80px)
+    }
+    50%{
+        transform: translate(0px, -80px)  
+    }
+    100%{
+        transform: translate(800px,-1000px);
+    }
+   }
+   @keyframes planet-mars{
+    
+    
+    0%{
+        transform: translatey(0)
+     }  
+     20%{
+        transform: translate(-45px, -50px)
+     }
+     30%{
+         transform: rotate(0);
+     }
+     50%{
+         transform: rotate(360deg);
+     }
+     100%{
+        transform:scale(2);
+   }
+}
+.page__luch{
+    position: absolute;
+    max-width: 400px;
+    left: 0;
+    top: 350px;
+    opacity: 0;
+    overflow: hidden;
+    transform: translate(100px,0);
+}
+.page:hover .page__luch{
+    opacity: 0.5;
+    overflow: visible;
+    transform:scale(3);
+    transition: all 4s ease 1s;
+    
+}
+.page__meteo{
+    position: absolute;
+    max-width: 300px;
+    bottom: 0;
+    left: 0;
+    transform: rotate(-110deg);
+    opacity: 0.6;
+ transform: translateX(-200%);
+    animation: meteo 5s linear 1 8s forwards;
+}
+@keyframes meteo{
+    0%{
+        transform: translatex(0px) rotate(-110deg);
+    }
+    50%{
+        transform: translate(200px) rotate(-110deg);
+    }
+    100% {
+        transform: translate(700px, -1000px) rotate(-110deg);
+    }
+    
+}
