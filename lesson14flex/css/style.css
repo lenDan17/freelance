@@ -43,7 +43,7 @@ border-radius: 5px 5px;
 color: white;
 }
 /*======================main================================================*/
-.main{
+.page{
     flex: 1 1 auto;
 }
 .main__container {
@@ -219,10 +219,8 @@ flex: 1 1 auto;
 .column__link a:hover::after{
     width: 100%;
 }
-footer{
-   
-}
-.fotter__container{
+
+.finish__container{
     background-color: rgb(147, 116, 75);
     text-align: center;
     font-size: 50px;
