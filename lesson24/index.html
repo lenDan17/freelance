@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>lesson24</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header></header>
+        <main class="page">
+    <div class="page__container">
+      <div class="block">
+        <h1 class="block__title">
+          функція
+        </h1>
+       <p class="page__text">
+        1 завдання Коля, із-за setTimeout(showName, 0); Вася буде виведений другим.
+       </p> 
+       <p class="page__text">
+        2 завдання все вірно , вивести функцію можна в любій частині коду
+       </p>
+       <p class="page__text">
+        3 завдання не вірно , бо функція присвоєна зміній, і визивати її треба після обяви зміної
+       </p> 
+       <p class="page__text">
+        4 завдання треба обявити зміну showMessage, а потім їй присвоїти функцію
+        let showMessage;
+if ( 2 > 1) {
+ showMessage = function (){
+        console.log('message');
+    }
+}
+showMessage();
+       </p> 
+       
+      </div>
+      <div class="subblock">
+        <h2 class="subblock__title">
+          масиви
+        </h2>
+        <p class="subblock__text">
+          <span>1</span>
+          let arr = ['Ваня', 'Иштван' , 'Оля',]; 
+          let newArr = arr;
+          newArr.push('Петя');
+          console.log(arr.length);
+          <br>
+          <span>2</span>
+          let user = ['Ваня', 'Иштван',];
+          user.splice(2 ,0 ,'Оля', );
+          console.log(user);
+          <br>
+          //
+          user.splice(0 , 1 ,'Петя', );
+          console.log(user);
+          <br>
+          //
+          let userThree = ['Ваня', 'Иштван' , 'Оля',];
+          userThree.splice(0 , 0 ,'Петя','Маша' ,);
+          console.log(userThree);
+          
+          <br>
+          <span>3</span>
+          let userOne = ['Ваня', 'Иштван' , 'Оля',]; 
+          let userTwo = userOne.splice(1 , 1 ,);
+          console.log(userOne);
+          console.log(userTwo);
+          <br>
+          <span>4</span>
+          let str = 'Ваня,Иштван ,Оля';
+          let strOne = str.split(',');
+          console.log(strOne);
+          <br>
+          <span>5</span> початкове значення не вірне , зміна arrTwo не обьявлена
+          let arrOne = [9, 2 , 8,];
+          let reduseValue = arrOne.reduce (function ( previousValue , item , index , arrey){
+              console.log(previousValue);
+          })
+        </p>
+
+      </div>
+      <div class="practic-dom">
+        <h3 class="practic-dom__title">DOM</h3>
+
+      <div class="data-sey-hi">Привет</div>
+      <ul>
+        <li>корчі</li>
+        <li>пончш</li>
+      </ul>
+      <div class="like">
+        <div class="like__title"></div>
+        <div class="like__item"></div>
+      </div>
+      <div class="subscribe"></div>
+      <div class="like-subscribe"></div>
+    </div>
+    <p>
+       <span>1</span>
+       let dataSey = document.querySelector('.data-sey-hi');<br>
+console.log(dataSey);<br>
+dataSey.setAttribute('data-Sey-hi' , "yes");<br>
+console.log(dataSey);<br>
+    </p>
+    <p>
+      <span>2</span>
+      let list = document.querySelector('ul'); <br>
+let listItem = list.innerHTML;<br>
+console.log(listItem);<br>
+    </p>
+    <p>
+      <span>3</span>
+      let likeIt = document.querySelector('.like');<br>
+console.log(likeIt);<br>
+    </p>
+    <p>
+      <span>4</span>
+      в кінці списку ul
+    </p>
+<h4>
+  Прокрутка.Розмір сторінки
+</h4>
+<p>
+  <span>1</span>
+  //координати
+const mainOne = document.documentElement; <br>
+const mainEl = mainOne.clientWidth;<br>
+console.log(mainEl);<br>
+</p>
+<p>
+  <span>2</span>function skroolToOne (){<br>
+    window.scrollTo(0 , 100);<br>
+}
+setTimeout(skroolToOne , 1000);<br>
+</p>
+<p>
+  <span>3</span>const sej = document.querySelector('.data-sey-hi');<br>
+  const getSej = sej.getBoundingClientRect();<br>
+  console.log(getSej);<br>
+  
+  const practik = document.querySelector('.practic-dom');<br>
+  const practikDom = practik.getBoundingClientRect();<br>
+  console.log(practikDom);<br>
+  
+  const block = document.querySelector('.block__title');<br>
+  const blockTitle = block.getBoundingClientRect();<br>
+  console.log(blockTitle);<br>
+</p>
+
+    </div>       
+        
+        </main>
+        <footer></footer>
+    </div>
+  <script src="js/script.js"></script>  
+</body>
+</html>
