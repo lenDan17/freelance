@@ -1,0 +1,44 @@
+body{
+    background-color: rgba(189, 134, 143, 0.297);
+}
+
+header{
+    margin-bottom: 150px;
+}
+
+.page__container {
+    max-width: 1120px;
+    margin: 0 auto;
+   text-align: center;  
+
+}
+
+.block__form {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+.block__line {
+display: none;
+}
+._active .block__line{
+    display: block;
+}
+.page__input {
+    width: 100%;
+    height: 70px;
+    border: 1px solid black;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 10px 5px 5px 10px;
+}
+.block__label {
+    display: inline-block;
+    line-height: 1;
+    color: gray;
+}
+
+.block__button img{
+    width: 50px;
+}
